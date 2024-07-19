@@ -1,4 +1,4 @@
-public class AnatoomiaClasses{
+public class MetodosEVariaveis{
     public static void main(String[] args) {
         String meuNome = "Larissa";
         int idade = 17;
