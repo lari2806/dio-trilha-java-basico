@@ -24,7 +24,7 @@ classDiagram
         +atender()
         +iniciarCorreioVoz()
         +tocar()
-        +pausar()
+        +pausar()P
         +selecionarMusica(musica : String)
          +exibirPagina( url : String)
         +adicionarNovaAba()
