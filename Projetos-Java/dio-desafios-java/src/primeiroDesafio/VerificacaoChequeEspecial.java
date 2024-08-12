@@ -1,3 +1,5 @@
+package primeiroDesafio;
+
 import java.util.Scanner;
 
 public class VerificacaoChequeEspecial {
