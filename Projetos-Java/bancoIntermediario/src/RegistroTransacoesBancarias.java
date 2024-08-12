@@ -36,7 +36,9 @@
                     i--; // Decrementa o índice para repetir a iteração
                 }
             }
-    
+            System.out.println("Saldo: " + saldo);
+            System.out.println("Transacoes:");
+            transacoes.stream().forEach(n -> System.out.println(transacoes.indexOf(n) + 1 +  ". " + n));
             // TODO: Exibir o saldo final e a lista de transações conforme a tabela de Exemplos.
     
             // Fechar o scanner para evitar vazamentos de recursos
