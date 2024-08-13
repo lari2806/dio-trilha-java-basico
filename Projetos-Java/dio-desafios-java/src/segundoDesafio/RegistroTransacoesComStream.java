@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -15,24 +16,27 @@ public class RegistroTransacoesComStream {
 
         for (int i = 1; i <= quantidadeTransacoes; i++) {
           
-            char tipoTransacao = scanner.next().charAt(0);
+            char tipoTransacao = scanner.next().toLowerCase().charAt(0);
             double valorTransacao = scanner.nextDouble();
 
             // TODO: Criar uma nova transação e adicioná-la à lista de transações
-            Transacao transacao = null;
+            Transacao transacao = new Transacao(tipoTransacao, valorTransacao);
+            transacoes.add(transacao);
+            
+            
 
             // Verifica e atualiza o saldo da conta com base no tipo de transação
-            if (transacao.getTipo().toUpperCase() == 'D') {
+            if (tipoTransacao == 'd') {
                 saldo += valorTransacao;
-            } else if (transacao.getTipo().toUpperCase() == 'S') {
+            } else if (tipoTransacao == 's') {
                 saldo -= valorTransacao;
             }
         }
 
-        System.out.println("\nSaldo : " + saldo);
-        System.out.println("\nTransacoes:");
+        System.out.println("Saldo : " + saldo);
+        System.out.println("Transacoes:");
         transacoes.stream()
-                .map(transacao -> "TODO: Formatar a Saída (tipo e valor) de acordo com os Exemplos.")
+                .map(transacao -> transacao.getTipo()+ " de " + transacao.getValor())
                 .collect(Collectors.toList())
                 .forEach(System.out::println);
 
