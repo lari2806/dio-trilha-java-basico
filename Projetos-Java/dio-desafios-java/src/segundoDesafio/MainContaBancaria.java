@@ -40,7 +40,7 @@ class ContaBancaria {
         // TODO: Verificar se o saldo é suficiente considerando o valor:
         // Se sim, atualizar o saldo e imprimir "Saque feito."
         // Se não, imprimir "Saldo insuficiente. Saque não realizado."
-        if (valor < saldo) {
+        if (valor <= saldo) {
             saldo -= valor;
             System.out.println("Saque feito.");
         }
