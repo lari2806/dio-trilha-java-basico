@@ -1,3 +1,4 @@
+import dio.gof.facade.Facade;
 import dio.gof.singleton.SingletonEager;
 import dio.gof.singleton.SingletonLazy;
 import dio.gof.singleton.SingletonLazyHolder;
@@ -33,6 +34,10 @@ public class Test {
 
         robo.setComportamento(normal);
         robo.mover();
+
+        //Facade
+        Facade facade = new Facade();
+        facade.migrarCliente("Larissa", "123445678");
 
 
 
