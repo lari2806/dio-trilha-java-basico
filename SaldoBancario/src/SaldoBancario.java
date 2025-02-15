@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 
-public class Main {
+public class SaldoBancario {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -21,10 +21,6 @@ public class Main {
         
 
 
-
-
-        
-        
         // TODO: Na linha abaixo, realize o cálculo do saldo final:
         double saldoFinal = saldoInicial + transacao + transacao2 + transacao3; ;
         
