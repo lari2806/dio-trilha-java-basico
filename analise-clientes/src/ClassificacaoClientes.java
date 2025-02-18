@@ -8,8 +8,6 @@ public class ClassificacaoClientes {
 
         double saldo = scanner.nextDouble();
 
-
-        // TODO: Implemente a classificação do cliente com base no saldo:
         if (saldo < 0) {
             System.out.println("Negativado");
         }
