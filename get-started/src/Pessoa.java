@@ -10,7 +10,7 @@ public class Pessoa {
 
     private int idade;
 
-    private int idadeAnualmente = OffsetDateTime.now().getYear();
+    private int idadeAnualmente = OffsetDateTime.now().getYear();  
 
     public Pessoa(String nome){
         this.nome = nome;
@@ -26,6 +26,7 @@ public class Pessoa {
         return idade;
     }
 
+    // a idade do usuario só irá mudar dps que se passar 1 ano, começando pela idade 1
     public void contarIdade(){
         if(this.idadeAnualmente >= OffsetDateTime.now().getYear()){
              return;
