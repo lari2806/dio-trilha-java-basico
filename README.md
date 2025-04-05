@@ -1,3 +1,3 @@
 # dio-trilha-java-basico
 
-## Este repositório foi feito para exercicios e praticar assuntos vistos do curso da DIO.
+## Este repositório foi feito para resolver desafios e praticar assuntos vistos de cursos da DIO sobre a linguagem de programação java.
